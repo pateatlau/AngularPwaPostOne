@@ -8,11 +8,13 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { IosInstallComponent } from './ios-install/ios-install.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    IosInstallComponent,
   ],
 
   imports: [
@@ -25,7 +27,9 @@ import { environment } from '../environments/environment';
 
   providers: [],
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
+  entryComponents: [IosInstallComponent]
 })
 
 export class AppModule { }
